@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 
 class ViewController: UITableViewController {
+    
     lazy var firestore = Firestore.firestore()
     lazy var presidentsCols = firestore.collection("presidents")
     let presidents:[[String:String]] = {
